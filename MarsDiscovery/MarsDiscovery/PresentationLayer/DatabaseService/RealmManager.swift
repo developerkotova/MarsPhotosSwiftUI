@@ -8,10 +8,24 @@
 import Foundation
 import RealmSwift
 
-final class RealmManager: NSObject {
-    static let shared = RealmManager()
-    let realm = try! Realm()
-    lazy var historyData : Results<HistoryModel> = { getData(ofType: HistoryModel.self) }()
+final class RealmManager {
+    static let shared: RealmManager = {
+        let instance = RealmManager()
+        return instance
+    }()
+    
+    private let realm: Realm
+    private init() {
+        do {
+            realm = try Realm()
+        } catch {
+            fatalError("Could not initialize Realm instance: \(error.localizedDescription)")
+        }
+    }
+    
+    var historyData: Results<HistoryModel> {
+        return getData(ofType: HistoryModel.self)
+    }
     
     func getData<T: Object>(ofType: T.Type) -> Results<T> {
         return realm.objects(T.self)
@@ -24,7 +38,7 @@ final class RealmManager: NSObject {
                 realm.add(historyModel, update: .error)
             }
         } catch {
-            print("Could not save object!\n\(String(describing: error.localizedDescription))")
+            print("Could not save object!\n\(error.localizedDescription)")
         }
     }
     
@@ -34,10 +48,7 @@ final class RealmManager: NSObject {
                 realm.delete(historyModel)
             }
         } catch {
-            print("Could not delete object!\n", error.localizedDescription)
+            print("Could not delete object!\n\(error.localizedDescription)")
         }
     }
 }
-
-
-

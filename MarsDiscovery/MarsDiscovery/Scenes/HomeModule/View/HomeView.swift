@@ -11,15 +11,15 @@ import SwiftUI
 struct HomeView: View {
     private let viewModel = HomeViewModel(networkService: NetworkService())
     
-    @State private var rovers = [RoverItem]()
-    @State var shouldShowCalendar = false
-    @State var shouldShowRoversFilterView = false
-    @State var shouldShowCamersFilterView = false
-    @State var selectedDate = Date()
-    @State var rover: Rovers = .curiosity
-    @State var camera: Cameras? = nil
-    @State var shouldShowEmptyState = true
-    @State var isLoading = false
+    @State private var rovers = [RoverModel]()
+    @State private var shouldShowCalendar = false
+    @State private var shouldShowRoversFilterView = false
+    @State private var shouldShowCamersFilterView = false
+    @State private var selectedDate = Date()
+    @State private var rover: Rovers = .curiosity
+    @State private var camera: Cameras? = nil
+    @State private var shouldShowEmptyState = true
+    @State private var isLoading = false
     @State private var selectedHistoryFilter: HistoryModel?
     @State private var isFromFilter = false
     @State private var alertMessage = ""

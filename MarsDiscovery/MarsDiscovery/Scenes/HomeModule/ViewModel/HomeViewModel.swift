@@ -10,8 +10,8 @@ import SwiftUI
 final class HomeViewModel: ObservableObject {
     private let networkService: NetworkServiceProtocol
     
-    private var rovers = [RoverItem]()
-    private var filteredRovers = [RoverItem]()
+    private var rovers = [RoverModel]()
+    private var filteredRovers = [RoverModel]()
     
     
     init(networkService: NetworkServiceProtocol) {
@@ -24,7 +24,7 @@ final class HomeViewModel: ObservableObject {
         camera: Cameras?,
         and date: String,
         with page: Int,
-        completion: @escaping ([RoverItem]?, Error?) -> ()
+        completion: @escaping ([RoverModel]?, Error?) -> ()
     ) {
         networkService.fetchPhotos(
             from: rover,
@@ -38,7 +38,7 @@ final class HomeViewModel: ObservableObject {
             case .success(let photos):
                 photos.forEach { photo in
                     let convertedDate = photo.earthDate.toDate()
-                    let item = RoverItem(
+                    let item = RoverModel(
                         id: "\(photo.id)", 
                         rover: "Rover: \(photo.rover.name)",
                         camera: "Camera: \(photo.camera.fullName)",

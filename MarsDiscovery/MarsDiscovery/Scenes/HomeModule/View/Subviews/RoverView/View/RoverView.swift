@@ -9,12 +9,12 @@ import SwiftUI
 import SDWebImageSwiftUI
 
 struct RoverView: View {
-    let rover: RoverItem
+    let rover: RoverModel
     @State private var imageURL: String!
     
     
     // MARK: - Init
-    init(rover: RoverItem) {
+    init(rover: RoverModel) {
         self.rover = rover
         self._imageURL = State(initialValue: rover.image)
     }
@@ -71,6 +71,6 @@ struct RoverView: View {
 
 struct RoverView_Previews: PreviewProvider {
     static var previews: some View {
-        RoverView(rover: RoverItem(id: "bar_foo", rover: "Rover: Liza", camera: "Camera", date: Date().toString(format: .long), image: "https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg"))
+        RoverView(rover: RoverModel(id: "bar_foo", rover: "Rover: Liza", camera: "Camera", date: Date().toString(format: .long), image: "https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg"))
     }
 }

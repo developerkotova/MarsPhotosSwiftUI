@@ -13,18 +13,13 @@
 		7378D85A2C418E1D004949A2 /* MarsDiscoveryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7378D8592C418E1D004949A2 /* MarsDiscoveryApp.swift */; };
 		7378D85E2C418E1F004949A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7378D85D2C418E1F004949A2 /* Assets.xcassets */; };
 		7378D8612C418E1F004949A2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7378D8602C418E1F004949A2 /* Preview Assets.xcassets */; };
-		7378D86B2C418E20004949A2 /* MarsDiscoveryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7378D86A2C418E20004949A2 /* MarsDiscoveryTests.swift */; };
-		7378D8752C418E20004949A2 /* MarsDiscoveryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7378D8742C418E20004949A2 /* MarsDiscoveryUITests.swift */; };
-		7378D8772C418E20004949A2 /* MarsDiscoveryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7378D8762C418E20004949A2 /* MarsDiscoveryUITestsLaunchTests.swift */; };
 		7378D88A2C418EA1004949A2 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7378D8892C418EA1004949A2 /* LoaderView.swift */; };
 		7378D88D2C418ED6004949A2 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 7378D88C2C418ED6004949A2 /* Lottie */; };
-		7378D88F2C418EFA004949A2 /* LoaderAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7378D88E2C418EFA004949A2 /* LoaderAnimationView.swift */; };
 		7378D8922C418F58004949A2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7378D8912C418F58004949A2 /* SnapKit */; };
 		7378D8962C41903A004949A2 /* LoaderTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 7378D8952C41903A004949A2 /* LoaderTest.json */; };
 		7378D89A2C419098004949A2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7378D8992C419098004949A2 /* HomeView.swift */; };
 		7378D89D2C4190C1004949A2 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7378D89C2C4190C1004949A2 /* HomeHeaderView.swift */; };
 		7378D8A12C41911E004949A2 /* RoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7378D8A02C41911E004949A2 /* RoverView.swift */; };
-		7378D8A52C419154004949A2 /* RoverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7378D8A42C419154004949A2 /* RoverViewModel.swift */; };
 		7378D8A82C4191BE004949A2 /* SFPRODISPLAYBOLD.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 7378D8A72C4191BE004949A2 /* SFPRODISPLAYBOLD.OTF */; };
 		7378D8AA2C4191C5004949A2 /* SFPRODISPLAYMEDIUM.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 7378D8A92C4191C5004949A2 /* SFPRODISPLAYMEDIUM.OTF */; };
 		7378D8AC2C4191CC004949A2 /* SFPRODISPLAYREGULAR.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 7378D8AB2C4191CC004949A2 /* SFPRODISPLAYREGULAR.OTF */; };
@@ -32,7 +27,7 @@
 		7378D8B32C419768004949A2 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7378D8B22C419768004949A2 /* NetworkService.swift */; };
 		7378D8B62C419791004949A2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7378D8B52C419791004949A2 /* Alamofire */; };
 		7378D8BA2C4197CD004949A2 /* RoverPhotoRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7378D8B92C4197CD004949A2 /* RoverPhotoRequestModel.swift */; };
-		7378D8BD2C4198C3004949A2 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7378D8BC2C4198C3004949A2 /* HomeModel.swift */; };
+		7378D8BD2C4198C3004949A2 /* RoverModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7378D8BC2C4198C3004949A2 /* RoverModel.swift */; };
 		7378D8C02C4198F4004949A2 /* PickerFilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7378D8BF2C4198F4004949A2 /* PickerFilterViewModel.swift */; };
 		7378D8C62C41A536004949A2 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7378D8C52C41A536004949A2 /* Date+Ext.swift */; };
 		7378D8CC2C41B449004949A2 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 7378D8CB2C41B449004949A2 /* SDWebImageSwiftUI */; };
@@ -70,17 +65,12 @@
 		7378D85D2C418E1F004949A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7378D8602C418E1F004949A2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7378D8662C418E20004949A2 /* MarsDiscoveryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarsDiscoveryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7378D86A2C418E20004949A2 /* MarsDiscoveryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsDiscoveryTests.swift; sourceTree = "<group>"; };
 		7378D8702C418E20004949A2 /* MarsDiscoveryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarsDiscoveryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7378D8742C418E20004949A2 /* MarsDiscoveryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsDiscoveryUITests.swift; sourceTree = "<group>"; };
-		7378D8762C418E20004949A2 /* MarsDiscoveryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsDiscoveryUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7378D8892C418EA1004949A2 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
-		7378D88E2C418EFA004949A2 /* LoaderAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderAnimationView.swift; sourceTree = "<group>"; };
 		7378D8952C41903A004949A2 /* LoaderTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LoaderTest.json; sourceTree = "<group>"; };
 		7378D8992C419098004949A2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		7378D89C2C4190C1004949A2 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
 		7378D8A02C41911E004949A2 /* RoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverView.swift; sourceTree = "<group>"; };
-		7378D8A42C419154004949A2 /* RoverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverViewModel.swift; sourceTree = "<group>"; };
 		7378D8A72C4191BE004949A2 /* SFPRODISPLAYBOLD.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYBOLD.OTF; sourceTree = "<group>"; };
 		7378D8A92C4191C5004949A2 /* SFPRODISPLAYMEDIUM.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYMEDIUM.OTF; sourceTree = "<group>"; };
 		7378D8AB2C4191CC004949A2 /* SFPRODISPLAYREGULAR.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYREGULAR.OTF; sourceTree = "<group>"; };
@@ -88,7 +78,7 @@
 		7378D8AF2C419686004949A2 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		7378D8B22C419768004949A2 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		7378D8B92C4197CD004949A2 /* RoverPhotoRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverPhotoRequestModel.swift; sourceTree = "<group>"; };
-		7378D8BC2C4198C3004949A2 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		7378D8BC2C4198C3004949A2 /* RoverModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverModel.swift; sourceTree = "<group>"; };
 		7378D8BF2C4198F4004949A2 /* PickerFilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerFilterViewModel.swift; sourceTree = "<group>"; };
 		7378D8C52C41A536004949A2 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		7378D8D32C41BEAF004949A2 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
@@ -134,8 +124,6 @@
 			isa = PBXGroup;
 			children = (
 				7378D8582C418E1D004949A2 /* MarsDiscovery */,
-				7378D8692C418E20004949A2 /* MarsDiscoveryTests */,
-				7378D8732C418E20004949A2 /* MarsDiscoveryUITests */,
 				7378D8572C418E1D004949A2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -171,23 +159,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		7378D8692C418E20004949A2 /* MarsDiscoveryTests */ = {
-			isa = PBXGroup;
-			children = (
-				7378D86A2C418E20004949A2 /* MarsDiscoveryTests.swift */,
-			);
-			path = MarsDiscoveryTests;
-			sourceTree = "<group>";
-		};
-		7378D8732C418E20004949A2 /* MarsDiscoveryUITests */ = {
-			isa = PBXGroup;
-			children = (
-				7378D8742C418E20004949A2 /* MarsDiscoveryUITests.swift */,
-				7378D8762C418E20004949A2 /* MarsDiscoveryUITestsLaunchTests.swift */,
-			);
-			path = MarsDiscoveryUITests;
-			sourceTree = "<group>";
-		};
 		7378D8852C418E4D004949A2 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,18 +182,9 @@
 		7378D8872C418E88004949A2 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7378D8882C418E8B004949A2 /* SubViews */,
 				7378D8892C418EA1004949A2 /* LoaderView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		7378D8882C418E8B004949A2 /* SubViews */ = {
-			isa = PBXGroup;
-			children = (
-				7378D88E2C418EFA004949A2 /* LoaderAnimationView.swift */,
-			);
-			path = SubViews;
 			sourceTree = "<group>";
 		};
 		7378D8932C419019004949A2 /* Resources */ = {
@@ -284,7 +246,6 @@
 		7378D89F2C41910C004949A2 /* RoverView */ = {
 			isa = PBXGroup;
 			children = (
-				7378D8A32C419147004949A2 /* Model */,
 				7378D8A22C419142004949A2 /* View */,
 			);
 			path = RoverView;
@@ -296,14 +257,6 @@
 				7378D8A02C41911E004949A2 /* RoverView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		7378D8A32C419147004949A2 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				7378D8A42C419154004949A2 /* RoverViewModel.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		7378D8A62C4191AD004949A2 /* Fonts */ = {
@@ -353,7 +306,7 @@
 		7378D8BB2C4198B9004949A2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7378D8BC2C4198C3004949A2 /* HomeModel.swift */,
+				7378D8BC2C4198C3004949A2 /* RoverModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -616,11 +569,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7378D8EA2C43F72C004949A2 /* PickerFilterView.swift in Sources */,
-				7378D8A52C419154004949A2 /* RoverViewModel.swift in Sources */,
 				7378D85A2C418E1D004949A2 /* MarsDiscoveryApp.swift in Sources */,
-				7378D8BD2C4198C3004949A2 /* HomeModel.swift in Sources */,
+				7378D8BD2C4198C3004949A2 /* RoverModel.swift in Sources */,
 				7378D8F72C4447EE004949A2 /* PhotoView.swift in Sources */,
-				7378D88F2C418EFA004949A2 /* LoaderAnimationView.swift in Sources */,
 				7378D8B02C419686004949A2 /* HomeViewModel.swift in Sources */,
 				7323C2F92C46553400563FE1 /* HistoryModel.swift in Sources */,
 				7378D8C62C41A536004949A2 /* Date+Ext.swift in Sources */,
@@ -644,7 +595,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7378D86B2C418E20004949A2 /* MarsDiscoveryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -652,8 +602,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7378D8772C418E20004949A2 /* MarsDiscoveryUITestsLaunchTests.swift in Sources */,
-				7378D8752C418E20004949A2 /* MarsDiscoveryUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

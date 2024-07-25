@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Lottie
 
 struct LoaderView: View {
     
@@ -27,7 +28,8 @@ struct LoaderView: View {
                     .shadow(color: Color.black.opacity(0.5), radius: 30, x: 5, y: 5)
                     .padding(.top, 250)
                 Spacer()
-                LoaderAnimationView(filename: "LoaderTest")
+                LottieView(animation: .named("LoaderTest"))
+                    .playing(loopMode: .loop)
                     .frame(width: 300, height: 200)
                     .padding(.top, 100)
 
@@ -45,3 +47,4 @@ struct LoaderView: View {
 #Preview {
     LoaderView(changeRootView: {})
 }
+
