@@ -34,7 +34,6 @@
 		7378D8BA2C4197CD004949A2 /* RoverPhotoRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7378D8B92C4197CD004949A2 /* RoverPhotoRequestModel.swift */; };
 		7378D8BD2C4198C3004949A2 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7378D8BC2C4198C3004949A2 /* HomeModel.swift */; };
 		7378D8C02C4198F4004949A2 /* PickerFilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7378D8BF2C4198F4004949A2 /* PickerFilterViewModel.swift */; };
-		7378D8C32C41992E004949A2 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7378D8C22C41992E004949A2 /* HelperFunctions.swift */; };
 		7378D8C62C41A536004949A2 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7378D8C52C41A536004949A2 /* Date+Ext.swift */; };
 		7378D8CC2C41B449004949A2 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 7378D8CB2C41B449004949A2 /* SDWebImageSwiftUI */; };
 		7378D8D42C41BEAF004949A2 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7378D8D32C41BEAF004949A2 /* HistoryView.swift */; };
@@ -91,7 +90,6 @@
 		7378D8B92C4197CD004949A2 /* RoverPhotoRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverPhotoRequestModel.swift; sourceTree = "<group>"; };
 		7378D8BC2C4198C3004949A2 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		7378D8BF2C4198F4004949A2 /* PickerFilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerFilterViewModel.swift; sourceTree = "<group>"; };
-		7378D8C22C41992E004949A2 /* HelperFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
 		7378D8C52C41A536004949A2 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		7378D8D32C41BEAF004949A2 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		7378D8D52C41BECA004949A2 /* HistoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryHeaderView.swift; sourceTree = "<group>"; };
@@ -155,7 +153,6 @@
 		7378D8582C418E1D004949A2 /* MarsDiscovery */ = {
 			isa = PBXGroup;
 			children = (
-				7378D8C12C419925004949A2 /* HelperFunctions */,
 				7378D8B12C419728004949A2 /* PresentationLayer */,
 				7378D8AD2C419283004949A2 /* Info.plist */,
 				7378D8932C419019004949A2 /* Resources */,
@@ -359,14 +356,6 @@
 				7378D8BC2C4198C3004949A2 /* HomeModel.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		7378D8C12C419925004949A2 /* HelperFunctions */ = {
-			isa = PBXGroup;
-			children = (
-				7378D8C22C41992E004949A2 /* HelperFunctions.swift */,
-			);
-			path = HelperFunctions;
 			sourceTree = "<group>";
 		};
 		7378D8C42C41A52D004949A2 /* Extensions */ = {
@@ -642,7 +631,6 @@
 				7378D8DA2C41C626004949A2 /* HistoryFilterView.swift in Sources */,
 				7378D8E42C42FACB004949A2 /* CalendarView.swift in Sources */,
 				7378D8EC2C43FCA8004949A2 /* View+Ext.swift in Sources */,
-				7378D8C32C41992E004949A2 /* HelperFunctions.swift in Sources */,
 				7378D88A2C418EA1004949A2 /* LoaderView.swift in Sources */,
 				7323C2F72C46549F00563FE1 /* RealmManager.swift in Sources */,
 				7378D8BA2C4197CD004949A2 /* RoverPhotoRequestModel.swift in Sources */,

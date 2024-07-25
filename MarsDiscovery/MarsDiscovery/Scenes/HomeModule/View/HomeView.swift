@@ -22,7 +22,6 @@ struct HomeView: View {
     @State var isLoading = false
     @State private var selectedHistoryFilter: HistoryModel?
     @State private var isFromFilter = false
-    @State private var showAlert = false
     @State private var alertMessage = ""
     
     var body: some View {
@@ -47,7 +46,7 @@ struct HomeView: View {
                 } else {
                     if shouldShowEmptyState {
                         Spacer()
-                        Text("No data for selected filters.")
+                        Text(alertMessage.isEmpty ? "No data for selected filters." : alertMessage)
                             .font(.callout)
                             .foregroundColor(.gray)
                             .multilineTextAlignment(.center)
@@ -116,7 +115,7 @@ struct HomeView: View {
                     viewModel: PickerFilterViewModel(title: "Camera", type: .camera)
                 )
             }
-          }
+        }
         .onChange(of: selectedDate) { _ in
             guard !isFromFilter else {return}
             fetchData()
@@ -134,27 +133,18 @@ struct HomeView: View {
             isFromFilter = true
             selectedDate = selectedHistoryFilter.date
             rover = Rovers.from(fullName: selectedHistoryFilter.rover) ?? .curiosity
-            camera = Cameras.from(fullName: selectedHistoryFilter.rover) ?? nil
+            camera = Cameras.from(fullName: selectedHistoryFilter.camera ?? "") ?? nil
             fetchData()
         }
         .onAppear {
             fetchData()
         }
         .preferredColorScheme(.light)
-        .alert(isPresented: $showAlert) {
-            Alert(
-                title: Text("Error"),
-                message: Text(alertMessage),
-                dismissButton: .default(Text("OK")) {
-                    showAlert = false
-                }
-            )
-        }
     }
-    
     
     private func fetchData() {
         isLoading = true
+        shouldShowEmptyState = false 
         viewModel.fetchPhotos(
             from: rover,
             camera: camera,
@@ -163,8 +153,8 @@ struct HomeView: View {
         ) { rovers, error in
             isLoading = false
             guard let rovers = rovers, error == nil else {
-                showAlert = true
                 alertMessage = error?.localizedDescription ?? ""
+                shouldShowEmptyState = true
                 return
             }
             shouldShowEmptyState = rovers.isEmpty

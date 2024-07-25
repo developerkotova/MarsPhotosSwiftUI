@@ -114,11 +114,11 @@ struct HomeHeaderView: View {
                     ZStack {
                         Color.white
                         Button(action: {
-                            if shouldShowRoversFilterView || shouldShowCamersFilterView == true {
-                                showAlert = false
-                            } else {
-                                showAlert = true
-                            }
+                                if shouldShowRoversFilterView || shouldShowCamersFilterView == true {
+                                    showAlert = false
+                                } else {
+                                    showAlert = true
+                                }
                         }) {
                             Image("add")
                                 .scaledToFit()
